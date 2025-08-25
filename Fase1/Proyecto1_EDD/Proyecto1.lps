@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Proyecto1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos Y="38"/>
+        <UsageCount Value="52"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="loginform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Login"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LoginForm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5"/>
+        <CursorPos X="15" Y="23"/>
+        <UsageCount Value="52"/>
+      </Unit>
+      <Unit>
+        <Filename Value="rootmenu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RootMenuForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RootMenu"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="41" Y="3"/>
+        <UsageCount Value="52"/>
+      </Unit>
+      <Unit>
+        <Filename Value="newaccform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewAccForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14"/>
+        <CursorPos X="27" Y="40"/>
+        <UsageCount Value="51"/>
+      </Unit>
+      <Unit>
+        <Filename Value="usuarioform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="UsuarioForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UsuarioForm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="61" Y="36"/>
+        <UsageCount Value="51"/>
+      </Unit>
+      <Unit>
+        <Filename Value="loginpanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="LoginPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LoginPanel"/>
+        <EditorIndex Value="5"/>
+        <CursorPos Y="81"/>
+        <UsageCount Value="47"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="createuserpanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CreatePanel"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CreateUserPanel"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="46"/>
+      </Unit>
+      <Unit>
+        <Filename Value="rootpanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RootPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RootPanel"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="25"/>
+        <CursorPos Y="53"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="userpanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="UserPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UserPanel"/>
+        <CursorPos Y="121"/>
+        <UsageCount Value="39"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="bandejaentradapanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BandejaEntradaPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="BandejaEntradaPanel"/>
+        <EditorIndex Value="13"/>
+        <CursorPos Y="53"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="correoabiertopanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CorreoAbiertoPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CorreoAbiertoPanel"/>
+        <EditorIndex Value="9"/>
+        <CursorPos Y="39"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="enviarcorreopanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="EnviarCorreoPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="EnviarCorreoPanel"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="29"/>
+        <CursorPos Y="57"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="papelerapanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PapeleraPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PapeleraPanel"/>
+        <EditorIndex Value="4"/>
+        <CursorPos Y="47"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="correosprogramadospanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CorreosProgramadosPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CorreosProgramadosPanel"/>
+        <EditorIndex Value="8"/>
+        <CursorPos Y="40"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="programarcorreospanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ProgramarCorreosPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ProgramarCorreosPanel"/>
+        <EditorIndex Value="3"/>
+        <CursorPos Y="70"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="agregarcontactopanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AgregarContacto"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="AgregarContactoPanel"/>
+        <EditorIndex Value="11"/>
+        <CursorPos Y="40"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="contactospanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ContactosPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ContactosPanel"/>
+        <EditorIndex Value="10"/>
+        <CursorPos Y="46"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="actualizarperfilpanel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ActualizarPerfilPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ActualizarPerfilPanel"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="7"/>
+        <CursorPos Y="39"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="loginform.lfm"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="38" Y="53"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="rootmenu.lfm"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="13" Y="27"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="newaccform.lfm"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="59" Y="7"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="createpanel.pas"/>
+        <ComponentName Value="CreatePanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CreatePanel"/>
+        <EditorIndex Value="7"/>
+        <CursorPos Y="54"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/lib/lazarus/3.0/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2348"/>
+        <CursorPos Y="2393"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="bandejaentradapanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="35" Y="66"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="actualizarperfilpanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="16" Y="55"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="agregarcontactopanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="4" Y="46"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="contactospanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="correoabiertopanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="correosprogramadospanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="createpanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="enviarcorreopanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="loginpanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="papelerapanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="programarcorreospanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Proyecto1.lpi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit>
+      <Unit>
+        <Filename Value="rootpanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="userpanel.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup/loginpanel.pas"/>
+        <ComponentName Value="LoginPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="LoginPanel"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
+        <CursorPos Y="81"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup/rootpanel.pas"/>
+        <ComponentName Value="RootPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="RootPanel"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="49" Y="9"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup/papelerapanel.pas"/>
+        <ComponentName Value="PapeleraPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PapeleraPanel"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup/createpanel.pas"/>
+        <ComponentName Value="CreatePanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CreatePanel"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="53" Y="14"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="backup/contactospanel.pas"/>
+        <ComponentName Value="ContactosPanel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ContactosPanel"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="46"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="15">
+      <Position>
+        <Filename Value="userpanel.pas"/>
+        <Caret Line="102" Column="66" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="rootpanel.pas"/>
+        <Caret Line="11" Column="58"/>
+      </Position>
+      <Position>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="5" Column="71"/>
+      </Position>
+      <Position>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="12" Column="38"/>
+      </Position>
+      <Position>
+        <Filename Value="programarcorreospanel.pas"/>
+        <Caret Line="15" Column="69" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="papelerapanel.pas"/>
+        <Caret Line="28" Column="76" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="loginpanel.pas"/>
+        <Caret Line="11" Column="42"/>
+      </Position>
+      <Position>
+        <Filename Value="enviarcorreopanel.pas"/>
+        <Caret Line="38" Column="61" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="createpanel.pas"/>
+        <Caret Line="16" Column="52"/>
+      </Position>
+      <Position>
+        <Filename Value="correosprogramadospanel.pas"/>
+        <Caret Line="20" Column="62" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="correoabiertopanel.pas"/>
+        <Caret Line="15" Column="57"/>
+      </Position>
+      <Position>
+        <Filename Value="contactospanel.pas"/>
+        <Caret Line="6" Column="67"/>
+      </Position>
+      <Position>
+        <Filename Value="bandejaentradapanel.pas"/>
+        <Caret Line="33" Column="63" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="agregarcontactopanel.pas"/>
+        <Caret Line="14" Column="49" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="agregarcontactopanel.pas"/>
+        <Caret Line="40" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="actualizarperfilpanel.pas"/>
+        <Caret Line="14" Column="53" TopLine="9"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default"/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

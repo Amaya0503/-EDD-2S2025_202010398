@@ -1,0 +1,70 @@
+unit RootPanel;
+
+{$mode ObjFPC}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  RootService;
+
+type
+
+  { TRootPanel }
+
+  TRootPanel = class(TForm)
+    btnCargaMasivaRoot: TButton;
+    btnReporteUsuariosRoot: TButton;
+    btnReporteRelacionesRoot: TButton;
+    Label1: TLabel;
+    procedure btnCargaMasivaRootClick(Sender: TObject);
+    procedure btnReporteUsuariosRootClick(Sender: TObject);
+    procedure btnReporteRelacionesRootClick(Sender: TObject);
+  private
+
+  public
+
+  end;
+
+var
+  Root: TRootPanel;
+
+implementation
+
+{$R *.lfm}
+
+uses Dialogs;
+
+{ TRootPanel }
+
+procedure TRootPanel.btnCargaMasivaRootClick(Sender: TObject);
+var
+  OpenDialog: TOpenDialog;
+  Count: Integer;
+begin
+  OpenDialog := TOpenDialog.Create(Self);
+  try
+    OpenDialog.Filter := 'Archivos JSON|*.json';
+    if OpenDialog.Execute then
+    begin
+      Count := CargarUsuariosDesdeJSON(OpenDialog.FileName);
+      ShowMessage(Format('Se cargaron %d usuarios correctamente.', [Count]));
+    end;
+  finally
+    OpenDialog.Free;
+  end;
+end;
+
+procedure TRootPanel.btnReporteUsuariosRootClick(Sender: TObject);
+begin
+  ReporteUsuarios;
+  ShowMessage('Reporte de usuarios generado en reportes/Root-Reportes/Usuarios.png');
+end;
+
+procedure TRootPanel.btnReporteRelacionesRootClick(Sender: TObject);
+begin
+  ReporteRelaciones;
+  ShowMessage('Reporte de relaciones generado en reportes/Root-Reportes/Relaciones.png');
+end;
+
+end.

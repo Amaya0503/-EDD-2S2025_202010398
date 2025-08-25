@@ -1,0 +1,71 @@
+object ContactosPanel: TContactosPanel
+  Left = 1400
+  Height = 263
+  Top = 194
+  Width = 367
+  Caption = 'Contactos'
+  ClientHeight = 263
+  ClientWidth = 367
+  Color = clBlack
+  LCLVersion = '3.0.0.3'
+  object tblMostrsarContactos: TStringGrid
+    Left = 25
+    Height = 133
+    Top = 104
+    Width = 320
+    ColCount = 2
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -15
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    RowCount = 4
+    TabOrder = 0
+    ColWidths = (
+      103
+      213
+    )
+    Cells = (
+      4
+      0
+      0
+      'Nombre'
+      0
+      1
+      'Usuario'
+      0
+      2
+      'Correo'
+      0
+      3
+      'Telefono'
+    )
+  end
+  object btnContactoAnterior: TButton
+    Left = 25
+    Height = 40
+    Top = 38
+    Width = 50
+    Caption = '<'
+    Font.Height = -20
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnContactoAnteriorClick
+  end
+  object btnContactoSiguiente: TButton
+    Left = 294
+    Height = 40
+    Top = 38
+    Width = 50
+    Caption = '>'
+    Font.Height = -20
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnContactoSiguienteClick
+  end
+end

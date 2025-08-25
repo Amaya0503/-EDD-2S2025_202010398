@@ -1,0 +1,151 @@
+object UserPanel: TUserPanel
+  Left = 1429
+  Height = 553
+  Top = 252
+  Width = 312
+  Caption = 'Menu de Usuario'
+  ClientHeight = 553
+  ClientWidth = 312
+  Color = clBlack
+  LCLVersion = '4.2.0.0'
+  object Label1: TLabel
+    Left = 48
+    Height = 28
+    Top = 32
+    Width = 45
+    Caption = 'Hola'
+    Font.Height = -20
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object AsignarNombreUsuario: TLabel
+    Left = 104
+    Height = 28
+    Top = 32
+    Width = 164
+    Caption = 'Nombre Usuario'
+    Font.Height = -20
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = AsignarNombreUsuarioClick
+  end
+  object btnBandejaEntrada: TButton
+    Left = 48
+    Height = 41
+    Top = 80
+    Width = 220
+    Caption = 'Bandeja de entrada'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnBandejaEntradaClick
+  end
+  object btnEnviarCorreo: TButton
+    Left = 48
+    Height = 41
+    Top = 128
+    Width = 220
+    Caption = 'Enviar Correo'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnEnviarCorreoClick
+  end
+  object btnPapelera: TButton
+    Left = 48
+    Height = 41
+    Top = 176
+    Width = 220
+    Caption = 'Papelera'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnPapeleraClick
+  end
+  object btnProgramarCorreo: TButton
+    Left = 48
+    Height = 41
+    Top = 224
+    Width = 220
+    Caption = 'Programar Correo'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnProgramarCorreoClick
+  end
+  object btnCorreosProgramados: TButton
+    Left = 48
+    Height = 41
+    Top = 272
+    Width = 220
+    Caption = 'Correos Programados'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btnCorreosProgramadosClick
+  end
+  object btnAgregarContacto: TButton
+    Left = 48
+    Height = 41
+    Top = 320
+    Width = 220
+    Caption = 'Agregar Contacto'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = btnAgregarContactoClick
+  end
+  object btnContactos: TButton
+    Left = 48
+    Height = 41
+    Top = 368
+    Width = 220
+    Caption = 'Contactos'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = btnContactosClick
+  end
+  object btnActualizarPerfil: TButton
+    Left = 48
+    Height = 41
+    Top = 416
+    Width = 220
+    Caption = 'Actualizar Perfil'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = btnActualizarPerfilClick
+  end
+  object btnGenerarReportesUsuario: TButton
+    Left = 48
+    Height = 41
+    Top = 464
+    Width = 220
+    Caption = 'Generar Reportes'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = btnGenerarReportesUsuarioClick
+  end
+end

@@ -1,0 +1,61 @@
+object RootPanel: TRootPanel
+  Left = 825
+  Height = 285
+  Top = 355
+  Width = 335
+  Caption = 'Root Menu'
+  ClientHeight = 285
+  ClientWidth = 335
+  Color = clBlack
+  LCLVersion = '4.2.0.0'
+  object Label1: TLabel
+    Left = 144
+    Height = 34
+    Top = 32
+    Width = 56
+    Caption = 'Root'
+    Font.Height = -24
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btnCargaMasivaRoot: TButton
+    Left = 48
+    Height = 41
+    Top = 96
+    Width = 250
+    Caption = 'Carga Masiva'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnCargaMasivaRootClick
+  end
+  object btnReporteUsuariosRoot: TButton
+    Left = 48
+    Height = 41
+    Top = 152
+    Width = 250
+    Caption = 'Reporte de Usuarios'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnReporteUsuariosRootClick
+  end
+  object btnReporteRelacionesRoot: TButton
+    Left = 48
+    Height = 41
+    Top = 208
+    Width = 250
+    Caption = 'Reporte de Relaciones'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnReporteRelacionesRootClick
+  end
+end

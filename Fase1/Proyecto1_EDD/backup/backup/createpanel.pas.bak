@@ -1,0 +1,66 @@
+unit CreatePanel;
+
+{$mode ObjFPC}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  AuthService, AppContext;
+
+type
+
+  { TCreatePanel }
+
+  TCreatePanel = class(TForm)
+    btnCuentaCreada: TButton;
+    Edit1: TEdit;  // Nombre
+    Edit2: TEdit;  // Usuario
+    Edit3: TEdit;  // Correo
+    Edit4: TEdit;  // Telefono
+    Edit5: TEdit;  // Contraseña
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    procedure btnCuentaCreadaClick(Sender: TObject);
+  private
+
+  public
+
+  end;
+
+var
+  CreateUser: TCreatePanel;
+
+implementation
+
+{$R *.lfm}
+
+uses LoginPanel;
+
+{ TCreatePanel }
+
+procedure TCreatePanel.btnCuentaCreadaClick(Sender: TObject);
+begin
+  if RegistrarUsuario(
+    Edit1.Text,  // Nombre
+    Edit2.Text,  // Usuario
+    Edit3.Text,  // Correo
+    Edit4.Text,  // Telefono
+    Edit5.Text   // Contraseña
+  ) then
+  begin
+    ShowMessage('Cuenta creada exitosamente.');
+    Login.Show;   // Volver al login
+    Self.Close;   // Cerrar este formulario
+  end
+  else
+  begin
+    ShowMessage('Error: el correo ya está registrado.');
+  end;
+end;
+
+end.

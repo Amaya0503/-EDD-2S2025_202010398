@@ -1,0 +1,64 @@
+object ActualizarPerfilPanel: TActualizarPerfilPanel
+  Left = 1392
+  Height = 221
+  Top = 152
+  Width = 404
+  Caption = 'Actualizar Perfil'
+  ClientHeight = 221
+  ClientWidth = 404
+  Color = clBlack
+  LCLVersion = '3.0.0.3'
+  object tblActualizarPerfil: TStringGrid
+    Left = 39
+    Height = 108
+    Top = 35
+    Width = 329
+    ColCount = 2
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -16
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    RowCount = 4
+    TabOrder = 0
+    ColWidths = (
+      115
+      205
+    )
+    RowHeights = (
+      23
+      23
+      23
+      23
+    )
+    Cells = (
+      4
+      0
+      0
+      'Nombre'
+      0
+      1
+      'Usuario'
+      0
+      2
+      'Correo'
+      0
+      3
+      'Telefono'
+    )
+  end
+  object btnActualizar: TButton
+    Left = 144
+    Height = 41
+    Top = 160
+    Width = 140
+    Caption = 'Actualizar'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnActualizarClick
+  end
+end

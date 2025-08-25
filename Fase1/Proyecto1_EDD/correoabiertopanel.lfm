@@ -1,0 +1,69 @@
+object CorreoAbiertoPanel: TCorreoAbiertoPanel
+  Left = 1208
+  Height = 522
+  Top = 262
+  Width = 501
+  ClientHeight = 522
+  ClientWidth = 501
+  Color = clBlack
+  LCLVersion = '3.0.0.3'
+  object btnEliminarCorreo: TButton
+    Left = 48
+    Height = 33
+    Top = 456
+    Width = 112
+    Caption = 'Eliminar'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnEliminarCorreoClick
+  end
+  object tblCorreoAbierto: TStringGrid
+    Left = 48
+    Height = 400
+    Top = 32
+    Width = 408
+    ColCount = 2
+    ColSizingCursor = crDefault
+    Columns = <    
+      item
+        Title.Caption = 'Title'
+        Width = 121
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 277
+      end>
+    DefaultColWidth = 203
+    DefaultRowHeight = 95
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -17
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    RowCount = 4
+    TabOrder = 1
+    ColWidths = (
+      121
+      277
+    )
+    Cells = (
+      4
+      0
+      0
+      'Remitente'
+      0
+      1
+      'Asunto'
+      0
+      2
+      'Fecha'
+      0
+      3
+      'Mensaje'
+    )
+  end
+end

@@ -1,0 +1,83 @@
+object BandejaEntradaPanel: TBandejaEntradaPanel
+  Left = 1319
+  Height = 411
+  Top = 189
+  Width = 555
+  Caption = 'Bandeja de Entrada'
+  ClientHeight = 411
+  ClientWidth = 555
+  Color = clBlack
+  LCLVersion = '4.2.0.0'
+  object Label1: TLabel
+    Left = 168
+    Height = 34
+    Top = 24
+    Width = 229
+    Caption = 'Bandeja de Entrada'
+    Font.Height = -24
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btnOrdenarAZ: TButton
+    Left = 24
+    Height = 40
+    Top = 64
+    Width = 55
+    Caption = 'Az'
+    Font.Height = -20
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnOrdenarAZClick
+  end
+  object txtMensajesNoLeidos: TEdit
+    Left = 475
+    Height = 40
+    Top = 64
+    Width = 55
+    Font.Height = -20
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnChange = txtMensajesNoLeidosChange
+  end
+  object tblBandejaEntrada: TDrawGrid
+    Left = 24
+    Height = 272
+    Top = 120
+    Width = 506
+    Anchors = [akTop, akLeft, akRight]
+    ColCount = 3
+    Columns = <    
+      item
+        PickList.Strings = (
+          'Estado'
+        )
+        ReadOnly = True
+        Title.Caption = 'Estado'
+      end    
+      item
+        Title.Caption = 'Asunto'
+      end    
+      item
+        Title.Caption = 'Remitente'
+      end>
+    DefaultColWidth = 162
+    ExtendedSelect = False
+    FixedCols = 0
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    RowCount = 20
+    ScrollBars = ssAutoVertical
+    TabOrder = 2
+    TitleFont.Height = -21
+    TitleFont.Name = 'Sans'
+    TitleFont.Style = [fsBold]
+    OnClick = tblBandejaEntradaClick
+  end
+end

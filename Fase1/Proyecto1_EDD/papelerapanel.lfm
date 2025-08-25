@@ -1,0 +1,230 @@
+object PapeleraPanel: TPapeleraPanel
+  Left = 1389
+  Height = 475
+  Top = 160
+  Width = 489
+  Caption = 'Papelera'
+  ClientHeight = 475
+  ClientWidth = 489
+  Color = clBlack
+  LCLVersion = '3.0.0.3'
+  object Label1: TLabel
+    Left = 192
+    Height = 34
+    Top = 16
+    Width = 103
+    Caption = 'Papelera'
+    Font.Height = -24
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btnBuscarPapelera: TButton
+    Left = 32
+    Height = 33
+    Top = 72
+    Width = 110
+    Caption = 'Buscar'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnBuscarPapeleraClick
+  end
+  object btnEliminardePapelera: TButton
+    Left = 160
+    Height = 33
+    Top = 72
+    Width = 110
+    Caption = 'Eliminar'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnEliminardePapeleraClick
+  end
+  object StringGrid1: TStringGrid
+    Left = 32
+    Height = 316
+    Top = 128
+    Width = 424
+    ColCount = 3
+    DefaultColWidth = 140
+    FixedCols = 0
+    Font.Height = -20
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    RowCount = 150
+    TabOrder = 2
+    TitleFont.Height = -21
+    TitleFont.Name = 'Sans'
+    TitleFont.Style = [fsBold]
+    RowHeights = (
+      23
+      23
+      23
+      23
+      23
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+      35
+    )
+    Cells = (
+      3
+      0
+      0
+      'Asunto'
+      1
+      0
+      'Remitente'
+      2
+      0
+      'Mensaje'
+    )
+  end
+end

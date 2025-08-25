@@ -1,0 +1,46 @@
+object AgregarContacto: TAgregarContacto
+  Left = 1428
+  Height = 193
+  Top = 219
+  Width = 284
+  Caption = 'Agregar Contacto'
+  ClientHeight = 193
+  ClientWidth = 284
+  Color = clBlack
+  LCLVersion = '3.0.0.3'
+  object Label1: TLabel
+    Left = 24
+    Height = 28
+    Top = 32
+    Width = 67
+    Caption = 'Correo'
+    Font.Height = -20
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object txtContactoaAgregar: TEdit
+    Left = 40
+    Height = 34
+    Top = 72
+    Width = 210
+    Font.Height = -15
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnChange = txtContactoaAgregarChange
+  end
+  object btnAgregarContacto: TButton
+    Left = 80
+    Height = 40
+    Top = 128
+    Width = 110
+    Caption = 'Agregar'
+    Font.Height = -19
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+end

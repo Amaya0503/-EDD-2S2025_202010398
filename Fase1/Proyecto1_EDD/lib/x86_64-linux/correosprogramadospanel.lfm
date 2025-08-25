@@ -1,0 +1,94 @@
+object CorreosProgramadosPanel: TCorreosProgramadosPanel
+  Left = 1367
+  Height = 450
+  Top = 264
+  Width = 502
+  Caption = 'Correos Programados'
+  ClientHeight = 450
+  ClientWidth = 502
+  Color = clBlack
+  LCLVersion = '4.2.0.0'
+  object btnEnviarTodos: TButton
+    Left = 29
+    Height = 33
+    Top = 69
+    Width = 99
+    Caption = 'Enviar'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnEnviarTodosClick
+  end
+  object Label1: TLabel
+    Left = 136
+    Height = 30
+    Top = 24
+    Width = 225
+    Caption = 'Correos Programados'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object tblCorreosProgramados: TStringGrid
+    Left = 34
+    Height = 308
+    Top = 116
+    Width = 438
+    ColCount = 3
+    DefaultColWidth = 145
+    FixedCols = 0
+    Font.Height = -15
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    RowCount = 30
+    TabOrder = 1
+    RowHeights = (
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+      23
+    )
+    Cells = (
+      3
+      0
+      0
+      'Asunto'
+      1
+      0
+      'Remitente'
+      2
+      0
+      'Fecha de Envio'
+    )
+  end
+end

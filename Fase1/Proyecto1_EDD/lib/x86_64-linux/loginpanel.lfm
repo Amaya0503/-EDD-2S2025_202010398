@@ -1,0 +1,98 @@
+object LoginPanel: TLoginPanel
+  Left = 1393
+  Height = 349
+  Top = 276
+  Width = 390
+  Caption = 'Menu Login'
+  ClientHeight = 349
+  ClientWidth = 390
+  Color = clBlack
+  LCLVersion = '4.2.0.0'
+  object Label1: TLabel
+    Left = 128
+    Height = 41
+    Top = 32
+    Width = 129
+    Caption = 'EDD Mail'
+    Font.Height = -29
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 30
+    Top = 104
+    Width = 58
+    Caption = 'Email'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 30
+    Top = 149
+    Width = 99
+    Caption = 'Password'
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object txtLoginEmail: TEdit
+    Left = 168
+    Height = 35
+    Top = 104
+    Width = 192
+    Color = clBtnShadow
+    Font.Height = -16
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnChange = txtLoginEmailChange
+  end
+  object txtLoginPassword: TEdit
+    Left = 168
+    Height = 35
+    Top = 149
+    Width = 192
+    Color = clBtnShadow
+    Font.Height = -16
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnChange = txtLoginPasswordChange
+  end
+  object btnIniciarSesion: TButton
+    Left = 112
+    Height = 41
+    Top = 216
+    Width = 170
+    Caption = 'Iniciar Sesión'
+    Color = clYellow
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnIniciarSesionClick
+  end
+  object btnCrearCuenta: TButton
+    Left = 112
+    Height = 41
+    Top = 272
+    Width = 170
+    Caption = 'Crear Cuenta'
+    Color = clYellow
+    Font.Height = -21
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnCrearCuentaClick
+  end
+end
