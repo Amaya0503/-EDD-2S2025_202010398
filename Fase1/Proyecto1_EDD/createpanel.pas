@@ -5,7 +5,7 @@ unit CreatePanel;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, usuarios;
 
 type
 
@@ -13,11 +13,11 @@ type
 
   TCreatePanel = class(TForm)
     btnCuentaCreada: TButton;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit4: TEdit;
-    Edit5: TEdit;
+    Edit1: TEdit; //Nombre
+    Edit2: TEdit; //Usuario
+    Edit3: TEdit; //Email
+    Edit4: TEdit; //Telefono
+    Edit5: TEdit; //Contraseña
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -38,17 +38,25 @@ implementation
 
 {$R *.lfm}
 
-// Aquí puedes usar LoginPanel sin problema
 uses LoginPanel;
 
 { TCreatePanel }
 
 procedure TCreatePanel.btnCuentaCreadaClick(Sender: TObject);
 begin
+  // Guardamos el usuario en la lista global
+  AgregarUsuario(
+    ListaGlobalUsuarios,
+    Edit1.Text, // Nombre
+    Edit2.Text, // Usuario
+    Edit3.Text, // Email
+    Edit4.Text, // Telefono
+    Edit5.Text  // Contraseña
+  );
+
   ShowMessage('Cuenta creada exitosamente.');
   Login.Show;  // Mostramos el login
   Self.Close;  // Cerramos el formulario actual
 end;
 
 end.
-
