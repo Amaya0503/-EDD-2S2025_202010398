@@ -5,7 +5,8 @@ unit RootPanel;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  usuarios;
 
 type
 
@@ -35,18 +36,31 @@ implementation
 { TRootPanel }
 
 procedure TRootPanel.btnCargaMasivaRootClick(Sender: TObject);
+var
+  OpenDialog: TOpenDialog;
 begin
-
+  OpenDialog := TOpenDialog.Create(Self);
+  try
+    OpenDialog.Filter := 'Archivos JSON|*.json';
+    OpenDialog.Title := 'Seleccionar archivo de usuarios';
+    if OpenDialog.Execute then
+    begin
+      CargarUsuariosDesdeJSON(ListaGlobalUsuarios, OpenDialog.FileName);
+      ShowMessage('Usuarios cargados exitosamente desde: ' + OpenDialog.FileName);
+    end;
+  finally
+    OpenDialog.Free;
+  end;
 end;
 
 procedure TRootPanel.btnReporteUsuariosRootClick(Sender: TObject);
 begin
-
+  // Aquí más adelante generaremos el reporte de usuarios
 end;
 
 procedure TRootPanel.btnReporteRelacionesRootClick(Sender: TObject);
 begin
-
+  // Aquí más adelante generaremos el reporte de relaciones
 end;
 
 end.

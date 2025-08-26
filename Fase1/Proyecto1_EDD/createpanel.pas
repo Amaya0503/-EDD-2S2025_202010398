@@ -47,7 +47,6 @@ procedure TCreatePanel.btnCuentaCreadaClick(Sender: TObject);
 begin
   ShowMessage('Cuenta creada exitosamente.');
   Login.Show;  // Mostramos el login
-  Self.Close;  // Cerramos el formulario actual
 end;
 
 end.

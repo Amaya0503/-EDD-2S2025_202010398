@@ -5,7 +5,8 @@ unit LoginPanel;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, CreatePanel, RootPanel, UserPanel;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  CreatePanel, RootPanel, UserPanel;
 
 type
 
@@ -49,18 +50,36 @@ begin
 end;
 
 procedure TLoginPanel.btnIniciarSesionClick(Sender: TObject);
+var
+  actual: PUsuario;
+  encontrado: Boolean;
 begin
+  // Caso 1: Root
   if (txtLoginEmail.Text = 'root@edd.com') and (txtLoginPassword.Text = 'root123') then
   begin
-    Self.Hide;
-    ShowMessage('Inicio de sesión exitoso.');
-    Root := TRootPanel.Create(Self);  // Se debe dirigir acá
+    ShowMessage('Inicio de sesión exitoso como ROOT.');
+    Root := TRootPanel.Create(Self);
     Root.Show;
-  end
-  else if (txtLoginEmail.Text = '123') and (txtLoginPassword.Text = '123') then
+    Exit;
+  end;
+
+  // Caso 2: Usuarios registrados en la lista
+  encontrado := False;
+  actual := ListaGlobalUsuarios.cabeza;
+
+  while actual <> nil do
   begin
-    Self.Hide;
-    ShowMessage('Inicio de sesión exitoso.');
+    if (actual^.email = txtLoginEmail.Text) and (actual^.password = txtLoginPassword.Text) then
+    begin
+      encontrado := True;
+      Break;
+    end;
+    actual := actual^.siguiente;
+  end;
+
+  if encontrado then
+  begin
+    ShowMessage('Inicio de sesión exitoso como usuario: ' + actual^.nombre);
     User := TUserPanel.Create(Self);
     User.Show;
   end
@@ -74,7 +93,6 @@ procedure TLoginPanel.btnCrearCuentaClick(Sender: TObject);
 begin
   CreateUser := TCreatePanel.Create(Self);  // Crear el formulario de crear cuenta
   CreateUser.Show;                          // Mostrarlo
-  Self.Hide;                                // Ocultar login
 end;
 
 end.

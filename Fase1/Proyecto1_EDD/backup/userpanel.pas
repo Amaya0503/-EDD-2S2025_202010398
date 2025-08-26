@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, BandejaEntradaPanel, ContactosPanel, AgregarContactoPanel,
-  ActualizarPerfilPanel, CorreosProgramadosPanel, EnviarCorreoPanel, PapeleraPanel, ProgramarCorreosPanel;
+  ActualizarPerfilPanel, CorreosProgramadosPanel, EnviarCorreoPanel, PapeleraPanel, ProgramarCorreosPanel, usuarios;
 
 type
 
@@ -51,47 +51,41 @@ implementation
 
 procedure TUserPanel.btnBandejaEntradaClick(Sender: TObject);
 begin
-    Self.Hide;
     BandejaEntrada := TBandejaEntradaPanel.Create(self);
     BandejaEntrada.Show;
 end;
 
 procedure TUserPanel.btnContactosClick(Sender: TObject);
 begin
-    Self.Hide;
     Contactos := TContactosPanel.Create(self);
     Contactos.Show;
 end;
 
 procedure TUserPanel.btnAgregarContactoClick(Sender: TObject);
 begin
-    Self.Hide;
     AgregarContacto := TAgregarContacto.Create(self);
     AgregarContacto.Show;
 end;
 
 procedure TUserPanel.btnActualizarPerfilClick(Sender: TObject);
 begin
-    Self.Hide;
     ActualizarPerfil := TActualizarPerfilPanel.Create(self);
     ActualizarPerfil.Show;
 end;
 
 procedure TUserPanel.AsignarNombreUsuarioClick(Sender: TObject);
 begin
-
+    AsignarNombreUsuario.Caption := actual^.nombre;
 end;
 
 procedure TUserPanel.btnCorreosProgramadosClick(Sender: TObject);
 begin
-    Self.Hide;
     CorreosProgramados := TCorreosProgramadosPanel.Create(self);
     CorreosProgramados.Show;
 end;
 
 procedure TUserPanel.btnEnviarCorreoClick(Sender: TObject);
 begin
-    Self.Hide;
     EnviarCorreo := TEnviarCorreoPanel.Create(self);
     EnviarCorreo.Show;
 
@@ -99,12 +93,10 @@ end;
 
 procedure TUserPanel.btnGenerarReportesUsuarioClick(Sender: TObject);
 begin
-    Self.Hide;
 end;
 
 procedure TUserPanel.btnPapeleraClick(Sender: TObject);
 begin
-    Self.Hide;
     Papelera := TPapeleraPanel.Create(self);
     Papelera.Show;
 
@@ -112,7 +104,6 @@ end;
 
 procedure TUserPanel.btnProgramarCorreoClick(Sender: TObject);
 begin
-    Self.Hide;
     ProgramarCorreos := TProgramarCorreosPanel.Create(self);
     ProgramarCorreos.Show;
 end;
