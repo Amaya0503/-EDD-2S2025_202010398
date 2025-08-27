@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  usuarios;
+  LCLType;
 
 type
 
@@ -20,10 +20,11 @@ type
     procedure btnCargaMasivaRootClick(Sender: TObject);
     procedure btnReporteUsuariosRootClick(Sender: TObject);
     procedure btnReporteRelacionesRootClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
-
+    { private declarations }
   public
-
+    { public declarations }
   end;
 
 var
@@ -33,6 +34,8 @@ implementation
 
 {$R *.lfm}
 
+uses LoginPanel, usuarios;
+
 { TRootPanel }
 
 procedure TRootPanel.btnCargaMasivaRootClick(Sender: TObject);
@@ -41,12 +44,22 @@ var
 begin
   OpenDialog := TOpenDialog.Create(Self);
   try
-    OpenDialog.Filter := 'Archivos JSON|*.json';
+    // Configurar el filtro para solo mostrar archivos JSON
+    OpenDialog.Filter := 'Archivos JSON (*.json)|*.json|Todos los archivos (*.*)|*.*';
     OpenDialog.Title := 'Seleccionar archivo de usuarios';
+
+    // Ejecutar el diálogo
     if OpenDialog.Execute then
     begin
-      CargarUsuariosDesdeJSON(ListaGlobalUsuarios, OpenDialog.FileName);
-      ShowMessage('Usuarios cargados exitosamente desde: ' + OpenDialog.FileName);
+      try
+        // Llamar a la función de carga masiva
+        CargarUsuariosDesdeJSON(ListaGlobalUsuarios, OpenDialog.FileName);
+        // Se ha eliminado la línea que causaba el error
+        ShowMessage('Usuarios cargados exitosamente desde: ' + OpenDialog.FileName);
+      except
+        on E: Exception do
+          ShowMessage('Error al cargar el archivo JSON: ' + E.Message);
+      end;
     end;
   finally
     OpenDialog.Free;
@@ -55,13 +68,20 @@ end;
 
 procedure TRootPanel.btnReporteUsuariosRootClick(Sender: TObject);
 begin
-  // Aquí más adelante generaremos el reporte de usuarios
+  // Aquí va la lógica para generar el reporte de usuarios
+  ShowMessage('Función de reporte de usuarios por implementar.');
 end;
 
 procedure TRootPanel.btnReporteRelacionesRootClick(Sender: TObject);
 begin
-  // Aquí más adelante generaremos el reporte de relaciones
+  // Aquí va la lógica para generar el reporte de relaciones
+  ShowMessage('Función de reporte de relaciones por implementar.');
+end;
+
+procedure TRootPanel.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  // Regresar al LoginPanel cuando se cierra la ventana
+  Login.Show;
 end;
 
 end.
-

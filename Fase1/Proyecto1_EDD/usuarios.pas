@@ -5,7 +5,7 @@ unit usuarios;
 interface
 
 uses
-    Classes, SysUtils, fpjson, jsonparser;
+  Classes, SysUtils, fpjson, jsonparser;
 
 type
   PUsuario = ^TUsuario;
@@ -21,16 +21,16 @@ type
 
   TListaUsuarios = record
     cabeza: PUsuario;
-    ultimoId: Integer; // contador de IDs
+    ultimoId: Integer; // Contador de IDs
   end;
 
 procedure InicializarLista(var lista: TListaUsuarios);
 procedure AgregarUsuario(var lista: TListaUsuarios; nombre, usuario, email, telefono, password: String);
 function BuscarUsuario(var lista: TListaUsuarios; usuario: String): PUsuario;
-procedure CargarUsuariosDesdeJSON(var lista: TListaUsuarios; rutaArchivo: String); // <<-- 🔹 agregado aquí
+procedure CargarUsuariosDesdeJSON(var lista: TListaUsuarios; rutaArchivo: String);
 
 var
-  ListaGlobalUsuarios: TListaUsuarios; // lista global accesible desde todos los formularios
+  ListaGlobalUsuarios: TListaUsuarios;
 
 implementation
 
@@ -45,8 +45,8 @@ var
   nuevo: PUsuario;
 begin
   New(nuevo);
-  lista.ultimoId += 1;
-  nuevo^.id := lista.ultimoId;
+  lista.ultimoId := lista.ultimoId + 1;
+  nuevo^.id := lista.ultimoId; // Asigna un ID secuencial
   nuevo^.nombre := nombre;
   nuevo^.usuario := usuario;
   nuevo^.email := email;
@@ -72,39 +72,37 @@ begin
     Exit;
   end;
 
-  // Leer archivo completo
   archivo := TStringList.Create;
   try
     archivo.LoadFromFile(rutaArchivo);
     jsonText := archivo.Text;
+
+    JSONData := GetJSON(jsonText);
+    try
+      JSONObject := TJSONObject(JSONData);
+      JSONArray := JSONObject.Arrays['usuarios'];
+
+      for i := 0 to JSONArray.Count - 1 do
+      begin
+        UsuarioObj := JSONArray.Objects[i];
+
+        // El ID no se lee, se genera de forma secuencial
+        AgregarUsuario(
+          lista,
+          UsuarioObj.Strings['nombre'],
+          UsuarioObj.Strings['usuario'],
+          UsuarioObj.Strings['email'],
+          UsuarioObj.Strings['telefono'],
+          '1234' // Contraseña por defecto
+        );
+      end;
+    finally
+      JSONData.Free;
+    end;
   finally
     archivo.Free;
   end;
-
-  // Parsear JSON directamente
-  JSONData := GetJSON(jsonText);
-  try
-    JSONObject := TJSONObject(JSONData);
-    JSONArray := JSONObject.Arrays['usuarios'];
-
-    for i := 0 to JSONArray.Count - 1 do
-    begin
-      UsuarioObj := JSONArray.Objects[i];
-
-      AgregarUsuario(
-        lista,
-        UsuarioObj.Strings['nombre'],
-        UsuarioObj.Strings['usuario'],
-        UsuarioObj.Strings['email'],
-        UsuarioObj.Strings['telefono'],
-        '1234' // contraseña por defecto
-      );
-    end;
-  finally
-    JSONData.Free;
-  end;
 end;
-
 
 function BuscarUsuario(var lista: TListaUsuarios; usuario: String): PUsuario;
 var
@@ -124,6 +122,6 @@ begin
 end;
 
 initialization
-  InicializarLista(ListaGlobalUsuarios); // lista inicializada al arrancar el programa
+  InicializarLista(ListaGlobalUsuarios);
 
 end.
