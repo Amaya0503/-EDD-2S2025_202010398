@@ -54,8 +54,9 @@ begin
       try
         // Llamar a la función de carga masiva
         CargarUsuariosDesdeJSON(ListaGlobalUsuarios, OpenDialog.FileName);
-        // Se ha eliminado la línea que causaba el error
+        // Ahora el contador de ID ha vuelto, así que podemos mostrar el total de usuarios
         ShowMessage('Usuarios cargados exitosamente desde: ' + OpenDialog.FileName);
+        ShowMessage('Total de usuarios cargados: ' + IntToStr(ListaGlobalUsuarios.ultimoId));
       except
         on E: Exception do
           ShowMessage('Error al cargar el archivo JSON: ' + E.Message);
@@ -82,6 +83,7 @@ procedure TRootPanel.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   // Regresar al LoginPanel cuando se cierra la ventana
   Login.Show;
+  Self.Hide;
 end;
 
 end.

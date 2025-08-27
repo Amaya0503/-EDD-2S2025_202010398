@@ -8,8 +8,9 @@
         <Filename Value="Proyecto1.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos Y="38"/>
-        <UsageCount Value="58"/>
+        <TopLine Value="9"/>
+        <CursorPos Y="37"/>
+        <UsageCount Value="59"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -21,7 +22,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="5"/>
         <CursorPos X="15" Y="23"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="59"/>
       </Unit>
       <Unit>
         <Filename Value="rootmenu.pas"/>
@@ -32,7 +33,7 @@
         <UnitName Value="RootMenu"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="41" Y="3"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="59"/>
       </Unit>
       <Unit>
         <Filename Value="newaccform.pas"/>
@@ -42,7 +43,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="14"/>
         <CursorPos X="27" Y="40"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="58"/>
       </Unit>
       <Unit>
         <Filename Value="usuarioform.pas"/>
@@ -54,7 +55,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos X="61" Y="36"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="58"/>
       </Unit>
       <Unit>
         <Filename Value="loginpanel.pas"/>
@@ -64,9 +65,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="LoginPanel"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="78"/>
-        <CursorPos X="19" Y="103"/>
-        <UsageCount Value="53"/>
+        <TopLine Value="59"/>
+        <CursorPos X="15" Y="63"/>
+        <UsageCount Value="54"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -78,7 +79,7 @@
         <UnitName Value="CreateUserPanel"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="2"/>
-        <UsageCount Value="52"/>
+        <UsageCount Value="53"/>
       </Unit>
       <Unit>
         <Filename Value="rootpanel.pas"/>
@@ -87,10 +88,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="RootPanel"/>
-        <EditorIndex Value="14"/>
-        <TopLine Value="60"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="59"/>
         <CursorPos X="5" Y="88"/>
-        <UsageCount Value="48"/>
+        <UsageCount Value="49"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -101,11 +102,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UserPanel"/>
-        <TopLine Value="83"/>
+        <TopLine Value="82"/>
         <CursorPos Y="111"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="46"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="bandejaentradapanel.pas"/>
@@ -114,10 +114,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="BandejaEntradaPanel"/>
-        <EditorIndex Value="13"/>
-        <TopLine Value="25"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="24"/>
         <CursorPos Y="53"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="44"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -129,9 +129,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CorreoAbiertoPanel"/>
         <EditorIndex Value="9"/>
-        <TopLine Value="11"/>
+        <TopLine Value="10"/>
         <CursorPos Y="39"/>
-        <UsageCount Value="38"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -143,9 +143,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="EnviarCorreoPanel"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="29"/>
+        <TopLine Value="28"/>
         <CursorPos Y="57"/>
-        <UsageCount Value="34"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -157,9 +157,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="PapeleraPanel"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="19"/>
+        <TopLine Value="18"/>
         <CursorPos Y="47"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -171,9 +171,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CorreosProgramadosPanel"/>
         <EditorIndex Value="8"/>
-        <TopLine Value="12"/>
+        <TopLine Value="11"/>
         <CursorPos Y="40"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -184,10 +184,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ProgramarCorreosPanel"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="42"/>
-        <CursorPos Y="70"/>
-        <UsageCount Value="32"/>
+        <TopLine Value="40"/>
+        <CursorPos X="45" Y="44"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -198,12 +199,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="AgregarContactoPanel"/>
-        <EditorIndex Value="11"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="12"/>
         <CursorPos Y="40"/>
-        <UsageCount Value="30"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <UsageCount Value="31"/>
       </Unit>
       <Unit>
         <Filename Value="contactospanel.pas"/>
@@ -213,9 +212,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ContactosPanel"/>
         <EditorIndex Value="10"/>
-        <TopLine Value="18"/>
+        <TopLine Value="17"/>
         <CursorPos Y="46"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="31"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -226,10 +225,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ActualizarPerfilPanel"/>
-        <EditorIndex Value="12"/>
-        <TopLine Value="11"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="10"/>
         <CursorPos Y="39"/>
-        <UsageCount Value="30"/>
+        <UsageCount Value="31"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -261,11 +260,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CreatePanel"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="54"/>
-        <CursorPos X="14" Y="76"/>
-        <UsageCount Value="23"/>
+        <TopLine Value="57"/>
+        <CursorPos X="5" Y="86"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -362,7 +360,10 @@
       </Unit>
       <Unit>
         <Filename Value="userpanel.lfm"/>
+        <HasResources Value="True"/>
         <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="20" Y="27"/>
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
@@ -422,126 +423,114 @@
         <EditorIndex Value="7"/>
         <TopLine Value="98"/>
         <CursorPos X="5" Y="127"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="28">
+    <JumpHistory HistoryIndex="25">
       <Position>
         <Filename Value="createpanel.pas"/>
-        <Caret Line="87" Column="5" TopLine="59"/>
+        <Caret Line="29" Column="46" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="papelerapanel.pas"/>
+        <Caret Line="47" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="37" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="35" Column="31" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="37" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="userpanel.pas"/>
+        <Caret Line="37" Column="46"/>
+      </Position>
+      <Position>
+        <Filename Value="userpanel.pas"/>
+        <Caret Line="219" Column="5" TopLine="190"/>
+      </Position>
+      <Position>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="37" TopLine="9"/>
       </Position>
       <Position>
         <Filename Value="rootpanel.pas"/>
         <Caret Line="23" Column="46" TopLine="9"/>
       </Position>
       <Position>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="37" TopLine="9"/>
+      </Position>
+      <Position>
         <Filename Value="rootpanel.pas"/>
-        <Caret Line="24" Column="46" TopLine="9"/>
+        <Caret Line="23" Column="46" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="createpanel.pas"/>
+        <Caret Line="29" Column="46" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="37" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="createpanel.pas"/>
+        <Caret Line="29" Column="46"/>
+      </Position>
+      <Position>
+        <Filename Value="rootpanel.pas"/>
+        <Caret Line="23" Column="46" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="createpanel.pas"/>
+        <Caret Line="82" Column="14" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="rootpanel.pas"/>
+        <Caret Line="86" Column="13" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="37" TopLine="9"/>
       </Position>
       <Position>
         <Filename Value="usuarios.pas"/>
-        <Caret Line="102" Column="50" TopLine="98"/>
-      </Position>
-      <Position>
-        <Filename Value="usuarios.pas"/>
-        <Caret Line="136" Column="5" TopLine="107"/>
+        <Caret Line="102" Column="54" TopLine="99"/>
       </Position>
       <Position>
         <Filename Value="createpanel.pas"/>
-        <Caret Line="64" Column="55" TopLine="60"/>
+        <Caret Line="59" Column="52" TopLine="58"/>
       </Position>
       <Position>
-        <Filename Value="createpanel.pas"/>
-        <Caret Line="63" Column="63" TopLine="60"/>
+        <Filename Value="loginpanel.pas"/>
+        <Caret Line="82" Column="56" TopLine="79"/>
       </Position>
       <Position>
         <Filename Value="rootpanel.pas"/>
-        <Caret Line="14" Column="71" TopLine="9"/>
-      </Position>
-      <Position>
-        <Filename Value="createpanel.pas"/>
-        <Caret Line="61" Column="55" TopLine="60"/>
-      </Position>
-      <Position>
-        <Filename Value="loginpanel.pas"/>
-        <Caret Line="80" Column="48" TopLine="78"/>
-      </Position>
-      <Position>
-        <Filename Value="loginpanel.pas"/>
-        <Caret Line="109" Column="5" TopLine="81"/>
-      </Position>
-      <Position>
-        <Filename Value="loginpanel.pas"/>
-        <Caret Line="57" Column="6" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="createpanel.pas"/>
-        <Caret Line="65" Column="3" TopLine="51"/>
-      </Position>
-      <Position>
-        <Filename Value="usuarios.pas"/>
-        <Caret Line="40" Column="51" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="usuarios.pas"/>
-        <Caret Line="257" Column="5" TopLine="213"/>
-      </Position>
-      <Position>
-        <Filename Value="usuarios.pas"/>
-        <Caret Line="101" Column="58" TopLine="98"/>
+        <Caret Line="67" Column="59" TopLine="62"/>
       </Position>
       <Position>
         <Filename Value="rootpanel.pas"/>
-        <Caret Line="51" Column="66" TopLine="45"/>
+        <Caret Line="88" Column="5" TopLine="60"/>
       </Position>
       <Position>
-        <Filename Value="rootpanel.pas"/>
-        <Caret Line="65" Column="59" TopLine="60"/>
+        <Filename Value="Proyecto1.lpr"/>
+        <Caret Line="37" TopLine="9"/>
       </Position>
       <Position>
-        <Filename Value="rootpanel.pas"/>
-        <Caret Line="66" Column="52" TopLine="60"/>
+        <Filename Value="userpanel.pas"/>
+        <Caret Line="8" Column="37"/>
       </Position>
       <Position>
-        <Filename Value="rootpanel.pas"/>
-        <Caret Line="87" Column="5" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="createpanel.pas"/>
-        <Caret Line="54" Column="51" TopLine="51"/>
-      </Position>
-      <Position>
-        <Filename Value="usuarios.pas"/>
-        <Caret Line="103" Column="46" TopLine="98"/>
-      </Position>
-      <Position>
-        <Filename Value="createpanel.pas"/>
-        <Caret Line="62" Column="62" TopLine="60"/>
-      </Position>
-      <Position>
-        <Filename Value="loginpanel.pas"/>
-        <Caret Line="49" Column="54" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="rootpanel.pas"/>
-        <Caret Line="65" Column="57" TopLine="60"/>
-      </Position>
-      <Position>
-        <Filename Value="loginpanel.pas"/>
-        <Caret Line="109" Column="5"/>
-      </Position>
-      <Position>
-        <Filename Value="loginpanel.pas"/>
-        <Caret Line="63" Column="15" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="loginpanel.pas"/>
-        <Caret Line="91" Column="15" TopLine="69"/>
-      </Position>
-      <Position>
-        <Filename Value="createpanel.pas"/>
-        <Caret Line="86" Column="5"/>
+        <Filename Value="userpanel.pas"/>
+        <Caret Line="48" Column="60" TopLine="41"/>
       </Position>
     </JumpHistory>
     <RunParams>

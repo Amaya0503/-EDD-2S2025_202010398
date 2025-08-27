@@ -74,6 +74,7 @@ begin
 
   // Regresar al formulario de Login
   Login.Show;
+  Self.Hide;
 end;
 
 procedure TCreatePanel.FormClose(Sender: TObject; var CloseAction: TCloseAction);

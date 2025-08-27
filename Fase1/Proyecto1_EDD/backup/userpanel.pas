@@ -24,7 +24,6 @@ type
     btnGenerarReportesUsuario: TButton;
     Label1: TLabel;
     AsignarNombreUsuario: TLabel;
-    procedure FormShow(Sender: TObject); // <-- Nuevo procedimiento para asignar el nombre
     procedure AsignarNombreUsuarioClick(Sender: TObject);
     procedure btnActualizarPerfilClick(Sender: TObject);
     procedure btnAgregarContactoClick(Sender: TObject);
@@ -50,70 +49,63 @@ implementation
 
 { TUserPanel }
 
-procedure TUserPanel.FormShow(Sender: TObject);
-begin
-  // Asigna el nombre del usuario directamente al texto del TLabel
-  // Esto se ejecuta al abrir la ventana
-  AsignarNombreUsuario.Caption := actual^.nombre;
-end;
-
 procedure TUserPanel.btnBandejaEntradaClick(Sender: TObject);
 begin
-  BandejaEntrada := TBandejaEntradaPanel.Create(self);
-  BandejaEntrada.Show;
+    BandejaEntrada := TBandejaEntradaPanel.Create(self);
+    BandejaEntrada.Show;
 end;
 
 procedure TUserPanel.btnContactosClick(Sender: TObject);
 begin
-  Contactos := TContactosPanel.Create(self);
-  Contactos.Show;
+    Contactos := TContactosPanel.Create(self);
+    Contactos.Show;
 end;
 
 procedure TUserPanel.btnAgregarContactoClick(Sender: TObject);
 begin
-  AgregarContacto := TAgregarContacto.Create(self);
-  AgregarContacto.Show;
+    AgregarContacto := TAgregarContacto.Create(self);
+    AgregarContacto.Show;
 end;
 
 procedure TUserPanel.btnActualizarPerfilClick(Sender: TObject);
 begin
-  ActualizarPerfil := TActualizarPerfilPanel.Create(self);
-  ActualizarPerfil.Show;
+    ActualizarPerfil := TActualizarPerfilPanel.Create(self);
+    ActualizarPerfil.Show;
 end;
 
 procedure TUserPanel.AsignarNombreUsuarioClick(Sender: TObject);
 begin
-  // Este procedimiento no es necesario para tu objetivo, puedes dejarlo vacío
-  // o eliminarlo si lo deseas. El nombre se asigna en FormShow.
 end;
 
 procedure TUserPanel.btnCorreosProgramadosClick(Sender: TObject);
 begin
-  CorreosProgramados := TCorreosProgramadosPanel.Create(self);
-  CorreosProgramados.Show;
+    CorreosProgramados := TCorreosProgramadosPanel.Create(self);
+    CorreosProgramados.Show;
 end;
 
 procedure TUserPanel.btnEnviarCorreoClick(Sender: TObject);
 begin
-  EnviarCorreo := TEnviarCorreoPanel.Create(self);
-  EnviarCorreo.Show;
+    EnviarCorreo := TEnviarCorreoPanel.Create(self);
+    EnviarCorreo.Show;
+
 end;
 
 procedure TUserPanel.btnGenerarReportesUsuarioClick(Sender: TObject);
 begin
-  // Aquí puedes poner el código para generar los reportes
 end;
 
 procedure TUserPanel.btnPapeleraClick(Sender: TObject);
 begin
-  Papelera := TPapeleraPanel.Create(self);
-  Papelera.Show;
+    Papelera := TPapeleraPanel.Create(self);
+    Papelera.Show;
+
 end;
 
 procedure TUserPanel.btnProgramarCorreoClick(Sender: TObject);
 begin
-  ProgramarCorreos := TProgramarCorreosPanel.Create(self);
-  ProgramarCorreos.Show;
+    ProgramarCorreos := TProgramarCorreosPanel.Create(self);
+    ProgramarCorreos.Show;
 end;
 
 end.
+

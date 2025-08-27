@@ -24,7 +24,7 @@ object UserPanel: TUserPanel
     Height = 28
     Top = 32
     Width = 164
-    Caption = 'Nombre Usuario'
+    Caption = 'Nombre'
     Font.Height = -20
     Font.Name = 'Sans'
     Font.Style = [fsBold]

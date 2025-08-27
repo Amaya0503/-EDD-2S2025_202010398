@@ -61,6 +61,7 @@ begin
     ShowMessage('Inicio de sesión exitoso como ROOT.');
     Root := TRootPanel.Create(Self);
     Root.Show;
+    Self.Hide;
     Exit;
   end;
 
@@ -101,7 +102,6 @@ begin
   // Crea el formulario para registrar un nuevo usuario y lo muestra
   CreateUser := TCreatePanel.Create(Self);
   CreateUser.Show;
-  Self.Hide;
 end;
 
 end.
