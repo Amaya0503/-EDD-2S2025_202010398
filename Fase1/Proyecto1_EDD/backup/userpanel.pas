@@ -34,6 +34,8 @@ type
     procedure btnGenerarReportesUsuarioClick(Sender: TObject);
     procedure btnPapeleraClick(Sender: TObject);
     procedure btnProgramarCorreoClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure FormShow(Sender: TObject);
   private
 
   public
@@ -47,65 +49,79 @@ implementation
 
 {$R *.lfm}
 
+uses LoginPanel;
+
 { TUserPanel }
+
+procedure TUserPanel.FormShow(Sender: TObject);
+begin
+  if Assigned(LoginPanel.UsuarioActivo) then
+  begin
+    AsignarNombreUsuario.Caption := LoginPanel.UsuarioActivo^.nombre;
+  end;
+end;
 
 procedure TUserPanel.btnBandejaEntradaClick(Sender: TObject);
 begin
-    BandejaEntrada := TBandejaEntradaPanel.Create(self);
-    BandejaEntrada.Show;
+  BandejaEntrada := TBandejaEntradaPanel.Create(self);
+  BandejaEntrada.Show;
 end;
 
 procedure TUserPanel.btnContactosClick(Sender: TObject);
 begin
-    Contactos := TContactosPanel.Create(self);
-    Contactos.Show;
+  Contactos := TContactosPanel.Create(self);
+  Contactos.Show;
 end;
 
 procedure TUserPanel.btnAgregarContactoClick(Sender: TObject);
 begin
-    AgregarContacto := TAgregarContacto.Create(self);
-    AgregarContacto.Show;
+  AgregarContacto := TAgregarContacto.Create(self);
+  AgregarContacto.Show;
 end;
 
 procedure TUserPanel.btnActualizarPerfilClick(Sender: TObject);
 begin
-    ActualizarPerfil := TActualizarPerfilPanel.Create(self);
-    ActualizarPerfil.Show;
+  ActualizarPerfil := TActualizarPerfilPanel.Create(self);
+  ActualizarPerfil.Show;
 end;
 
 procedure TUserPanel.AsignarNombreUsuarioClick(Sender: TObject);
 begin
+  // Este procedimiento está vacío. El cambio de nombre ocurre en FormShow.
 end;
 
 procedure TUserPanel.btnCorreosProgramadosClick(Sender: TObject);
 begin
-    CorreosProgramados := TCorreosProgramadosPanel.Create(self);
-    CorreosProgramados.Show;
+  CorreosProgramados := TCorreosProgramadosPanel.Create(self);
+  CorreosProgramados.Show;
 end;
 
 procedure TUserPanel.btnEnviarCorreoClick(Sender: TObject);
 begin
-    EnviarCorreo := TEnviarCorreoPanel.Create(self);
-    EnviarCorreo.Show;
-
+  EnviarCorreo := TEnviarCorreoPanel.Create(self);
+  EnviarCorreo.Show;
 end;
 
 procedure TUserPanel.btnGenerarReportesUsuarioClick(Sender: TObject);
 begin
+  //
 end;
 
 procedure TUserPanel.btnPapeleraClick(Sender: TObject);
 begin
-    Papelera := TPapeleraPanel.Create(self);
-    Papelera.Show;
-
+  Papelera := TPapeleraPanel.Create(self);
+  Papelera.Show;
 end;
 
 procedure TUserPanel.btnProgramarCorreoClick(Sender: TObject);
 begin
-    ProgramarCorreos := TProgramarCorreosPanel.Create(self);
-    ProgramarCorreos.Show;
+  ProgramarCorreos := TProgramarCorreosPanel.Create(self);
+  ProgramarCorreos.Show;
+end;
+
+procedure TUserPanel.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  Login.Show;
 end;
 
 end.
-

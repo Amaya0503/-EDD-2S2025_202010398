@@ -7,7 +7,7 @@ object ContactosPanel: TContactosPanel
   ClientHeight = 263
   ClientWidth = 367
   Color = clBlack
-  LCLVersion = '3.0.0.3'
+  LCLVersion = '4.2.0.0'
   object tblMostrsarContactos: TStringGrid
     Left = 25
     Height = 133

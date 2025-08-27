@@ -7,7 +7,7 @@ object AgregarContacto: TAgregarContacto
   ClientHeight = 193
   ClientWidth = 284
   Color = clBlack
-  LCLVersion = '3.0.0.3'
+  LCLVersion = '4.2.0.0'
   object Label1: TLabel
     Left = 24
     Height = 28
