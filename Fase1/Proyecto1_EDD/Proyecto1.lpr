@@ -19,7 +19,7 @@ ActualizarPerfilPanel;
 
 begin
   RequireDerivedFormResource := True;
-  Application.Scaled := True;
+  Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TLoginPanel, Login); //Siempre se inicia con el Login
   Application.CreateForm(TRootPanel, Root);

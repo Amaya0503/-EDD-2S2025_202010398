@@ -84,6 +84,7 @@
         <Filename Value="rootpanel.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="RootPanel"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="RootPanel"/>
       </Unit>
@@ -99,6 +100,7 @@
         <Filename Value="bandejaentradapanel.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="BandejaEntradaPanel"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="BandejaEntradaPanel"/>
       </Unit>
@@ -114,6 +116,7 @@
         <Filename Value="enviarcorreopanel.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="EnviarCorreoPanel"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="EnviarCorreoPanel"/>
       </Unit>
@@ -121,6 +124,7 @@
         <Filename Value="papelerapanel.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="PapeleraPanel"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="PapeleraPanel"/>
       </Unit>
@@ -128,6 +132,7 @@
         <Filename Value="correosprogramadospanel.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="CorreosProgramadosPanel"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CorreosProgramadosPanel"/>
       </Unit>
@@ -135,6 +140,7 @@
         <Filename Value="programarcorreospanel.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ProgramarCorreosPanel"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ProgramarCorreosPanel"/>
       </Unit>
@@ -150,6 +156,7 @@
         <Filename Value="contactospanel.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ContactosPanel"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ContactosPanel"/>
       </Unit>
@@ -157,6 +164,7 @@
         <Filename Value="actualizarperfilpanel.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ActualizarPerfilPanel"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="ActualizarPerfilPanel"/>
       </Unit>
@@ -169,6 +177,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="/home/amaya/Documentos/-EDD-2S2025_202010398/Fase1/"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

@@ -150,12 +150,12 @@ begin
   begin
     if (actual^.usuario = usuario) or (actual^.email = usuario) then
     begin
-      BuscarUsuario := actual;
+      Result := actual;
       Exit;
     end;
     actual := actual^.siguiente;
   end;
-  BuscarUsuario := nil;
+  Result := nil;
 end;
 
 procedure AgregarCorreo(var usuario: TUsuario; remitente, destinatario, asunto, mensaje: String);

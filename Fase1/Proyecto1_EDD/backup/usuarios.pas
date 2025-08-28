@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, fpjson, jsonparser;
 
 type
-  // Estructura de Correo
+  // Estructura de Correo (Lista Doblemente Enlazada)
   PCorreo = ^TCorreo;
   TCorreo = record
     id: Integer;
@@ -21,7 +21,7 @@ type
     anterior: PCorreo;
   end;
 
-  // Estructura de Contacto (para la lista circular)
+  // Estructura de Contacto (Lista Circular)
   PContacto = ^TContacto;
   TContacto = record
     id_contacto: Integer;
@@ -43,7 +43,7 @@ type
 
     // Listas de datos del usuario
     correos: PCorreo;
-    contactos: PContacto; // <- Nueva lista de contactos
+    contactos: PContacto; // <- Lista circular de contactos
   end;
 
   TListaUsuarios = record
@@ -61,7 +61,7 @@ procedure CargarUsuariosDesdeJSON(var lista: TListaUsuarios; rutaArchivo: String
 procedure AgregarCorreo(var usuario: TUsuario; remitente, destinatario, asunto, mensaje: String);
 
 // Procedimiento para agregar un contacto a un usuario
-procedure AgregarContacto(var usuario: TUsuario; nombre, email: String);
+procedure AgregarContactoAUsuario(var usuario: TUsuario; nombre, email: String);
 
 var
   ListaGlobalUsuarios: TListaUsuarios;
@@ -150,12 +150,12 @@ begin
   begin
     if (actual^.usuario = usuario) or (actual^.email = usuario) then
     begin
-      BuscarUsuario := actual;
+      Result := actual;
       Exit;
     end;
     actual := actual^.siguiente;
   end;
-  BuscarUsuario := nil;
+  Result := nil;
 end;
 
 procedure AgregarCorreo(var usuario: TUsuario; remitente, destinatario, asunto, mensaje: String);
@@ -178,38 +178,6 @@ begin
     usuario.correos^.anterior := nuevo;
   end;
   usuario.correos := nuevo;
-end;
-
-procedure AgregarContacto(var usuario: TUsuario; nombre, email: String);
-var
-  nuevo: PContacto;
-  actual: PContacto;
-begin
-  New(nuevo);
-  nuevo^.nombre := nombre;
-  nuevo^.email := email;
-
-  // Implementación de la lista circular
-  if not Assigned(usuario.contactos) then
-  begin
-    usuario.contactos := nuevo;
-    nuevo^.siguiente := nuevo; // Apunta a sí mismo
-  end
-  else
-  begin
-    actual := usuario.contactos;
-    while Assigned(actual^.siguiente) and (actual^.siguiente <> usuario.contactos) do
-    begin
-      actual := actual^.siguiente;
-    end;
-
-    nuevo^.siguiente := usuario.contactos;
-    actual^.siguiente := nuevo;
-
-    // Opcional: Para mantener el último agregado al final
-    // nuevo^.siguiente := usuario.contactos;
-    // usuario.contactos := nuevo;
-  end;
 end;
 
 initialization

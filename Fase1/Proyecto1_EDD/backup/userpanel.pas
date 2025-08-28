@@ -5,8 +5,8 @@ unit UserPanel;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, BandejaEntradaPanel, ContactosPanel, AgregarContactoPanel,
-  ActualizarPerfilPanel, CorreosProgramadosPanel, EnviarCorreoPanel, PapeleraPanel, ProgramarCorreosPanel, usuarios;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
+  Grids;
 
 type
 
@@ -49,7 +49,9 @@ implementation
 
 {$R *.lfm}
 
-uses LoginPanel;
+uses LoginPanel, BandejaEntradaPanel, ContactosPanel, AgregarContactoPanel,
+  ActualizarPerfilPanel, CorreosProgramadosPanel, EnviarCorreoPanel, PapeleraPanel,
+  ProgramarCorreosPanel, usuarios; // <-- Todas las unidades de formularios van aquí
 
 { TUserPanel }
 
@@ -87,7 +89,6 @@ end;
 
 procedure TUserPanel.AsignarNombreUsuarioClick(Sender: TObject);
 begin
-  // Este procedimiento está vacío. El cambio de nombre ocurre en FormShow.
 end;
 
 procedure TUserPanel.btnCorreosProgramadosClick(Sender: TObject);
@@ -104,7 +105,6 @@ end;
 
 procedure TUserPanel.btnGenerarReportesUsuarioClick(Sender: TObject);
 begin
-  //
 end;
 
 procedure TUserPanel.btnPapeleraClick(Sender: TObject);

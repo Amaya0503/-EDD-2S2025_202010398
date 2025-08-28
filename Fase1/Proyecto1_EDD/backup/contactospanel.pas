@@ -5,7 +5,7 @@ unit ContactosPanel;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Grids, StdCtrls, usuarios,
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Grids, StdCtrls,
   LCLType;
 
 type
@@ -37,7 +37,7 @@ implementation
 
 {$R *.lfm}
 
-uses LoginPanel, UserPanel; // <-- ¡El cambio vital está aquí!
+uses LoginPanel, usuarios, UserPanel; // <-- ¡El cambio vital está aquí!
 
 { TContactosPanel }
 

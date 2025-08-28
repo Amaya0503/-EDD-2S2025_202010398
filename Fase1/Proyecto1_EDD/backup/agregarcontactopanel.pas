@@ -31,7 +31,7 @@ implementation
 
 {$R *.lfm}
 
-uses LoginPanel, usuarios;
+uses LoginPanel, usuarios, UserPanel; // <-- ¡Se agregó UserPanel aquí!
 
 { TAgregarContacto }
 
@@ -54,7 +54,7 @@ begin
 
   if Assigned(usuario_a_agregar) then
   begin
-    // La llamada ahora es a la función renombrada 'AgregarContactoAUsuario'
+    // La llamada a la función renombrada 'AgregarContactoAUsuario'
     AgregarContactoAUsuario(LoginPanel.UsuarioActivo^, usuario_a_agregar^.nombre, usuario_a_agregar^.email);
     ShowMessage('Contacto ' + usuario_a_agregar^.nombre + ' (' + usuario_a_agregar^.email + ') agregado exitosamente.');
   end
@@ -69,7 +69,7 @@ end;
 
 procedure TAgregarContacto.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  // Regresar al panel de usuario
+  // Ahora la variable 'User' es conocida y se puede usar
   User.Show;
 end;
 
